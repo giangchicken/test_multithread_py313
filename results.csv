@@ -1,0 +1,43 @@
+,url,SBERT Similarity,LaBSE Similarity,TF-IDF Similarity,name
+0,https://vingroup.net/,0.807757,0.56771904,0.27373369405540127,TẬP ĐOÀN VINGROUP -  CÔNG TY CP
+0,"https://mekongasean.vn/to-ng-ta-i-sa-n-vingroup-vuot-nguong-700000-ty-do-ng-31407.html#:~:text=T%E1%BB%95ng%20s%E1%BB%91%20n%E1%BB%A3%20c%E1%BB%A7a%20Vingroup,l%E1%BB%9Bn%20v%E1%BB%9Bi%20418.112%20t%E1%BB%B7%20%C4%91%E1%BB%93ng.",0.84539616,0.5376409,0.2280106142887132,TẬP ĐOÀN VINGROUP -  CÔNG TY CP
+0,https://www.baoviet.com.vn/insurance/,0.47111267,0.3269749,0.504908004483419,TỔNG CÔNG TY BẢO HIỂM BẢO VIỆT
+0,https://baovietonline.com.vn/,0.49220875,0.34260005,0.4451239973355965,TỔNG CÔNG TY BẢO HIỂM BẢO VIỆT
+0,https://baoviet.com.vn/,0.46268272,0.23482737,0.30645530323162595,TỔNG CÔNG TY BẢO HIỂM BẢO VIỆT
+0,https://www.bibica.com.vn/,0.7534013,0.5163491,0.22482717595177176,CÔNG TY CỔ PHẦN BIBICA
+0,https://s.cafef.vn/hose/BBC-cong-ty-co-phan-bibica.chn,0.61391306,0.33485353,0.10868029407608772,CÔNG TY CỔ PHẦN BIBICA
+0,https://finance.vietstock.vn/bbc/ho-so-doanh-nghiep.htm,0.4924532,0.3296048,0.2468758876533544,CÔNG TY CỔ PHẦN BIBICA
+0,https://bhhk.com.vn/,0.39741683,0.36444533,0.45693812487340013,CÔNG TY CỔ PHẦN BẢO HIỂM HÀNG KHÔNG
+0,https://ebhhk.com.vn/gioi-thieu.html,0.43648198,0.32800964,0.434518652826585,CÔNG TY CỔ PHẦN BẢO HIỂM HÀNG KHÔNG
+0,https://ibaohiem.vn/gioi-thieu-bao-hiem-hang-khong-vni/,0.5141381,0.45585895,0.583091154094998,CÔNG TY CỔ PHẦN BẢO HIỂM HÀNG KHÔNG
+0,https://anphatbioplastics.com/,0.32827485,0.1772711,0.042126257412640714,CÔNG TY CỔ PHẦN NHỰA VÀ MÔI TRƯỜNG XANH AN PHÁT
+0,https://finance.vietstock.vn/AAA-ctcp-nhua-an-phat-xanh.htm,0.20017114,0.14645073,0.11489764621143267,CÔNG TY CỔ PHẦN NHỰA VÀ MÔI TRƯỜNG XANH AN PHÁT
+0,https://www.fact-link.com.vn/home/anphat-vn,0.44009563,0.17046854,0.054983453501324206,CÔNG TY CỔ PHẦN NHỰA VÀ MÔI TRƯỜNG XANH AN PHÁT
+0,http://p-techno.com/,0.55356133,0.41690257,0.0700917855564366,CÔNG TY TNHH P&P HEALING HOUSE
+0,https://www.dussmann.vn/vi/dussmann-service/cong-ty/,0.5881591,0.55762136,0.14332912864118572,CÔNG TY TNHH P&P HEALING HOUSE
+0,https://oneoneone.vn/organic-farms-korea/,0.43311068,0.12636395,0.07574014953093874,CÔNG TY TNHH XUẤT NHẬP KHẨU KORE
+0,https://www.pghouse.vn/doanh-nghiep-vang/cong-ty-tnhh-dich-vu-bat-dong-san-premier-viet-nam-10875.html,0.51838994,0.36276358,0.07849470504858047,CÔNG TY TNHH DỊCH VỤ BẤT ĐỘNG SẢN H & N
+0,https://www.taiphat.vn/,0.677168,0.26193297,0.05185475447259318,CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ C.Z.C
+0,https://minhkhang.com.vn/,0.3151854,0.2730661,0.011074404917440796,CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ C.Z.C
+0,https://vietincoseco.vn/,0.60575837,0.41503602,0.0564479376375097,CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ C.Z.C
+0,https://songnhat.com.vn/,0.42092037,0.44807363,0.1905291699059114,CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VẬN TẢI SONG NHẬT
+0,https://myphambeautyqueen.net/,0.54154104,0.45721567,0.21028586323701987,CÔNG TY TNHH MỸ PHẨM SPA BEAUTY QUEEN
+0,https://mioskin.vn/,0.71656996,0.3915579,0.21329999997185017,CÔNG TY CỔ PHẦN MỸ PHẨM MIOSKIN
+0,https://giaan115.com/tin-tuc/khu-y-te-ky-thuat-cao-hoa-lam-shangri-la-da-ra-doi-nhu-the-nao,0.56367886,0.3849048,0.12084220853996269,CÔNG TY TNHH DỊCH VỤ SHANGRI-LA
+0,https://doanhnghiepmoi.vn/thong-tin/CONG-TY-TNHH-HANG-HAI-QUOC-TUAN-13741.html,0.33141273,0.21987991,0.012202496878146889,CÔNG TY TNHH HÀNG HẢI QUỐC TUẤN
+0,http://vantaiquoctuan.vn/,0.3570776,0.29632324,0.034299935037368744,CÔNG TY TNHH HÀNG HẢI QUỐC TUẤN
+0,https://dauthau.asia/businesslistings/detail/CONG-TY-TNHH-THUONG-MAI-KY-THUAT-VA-DICH-VU-THONG-NHAT-33115/,0.38996887,0.20792949,0.06366679706033657,CÔNG TY TNHH TM DV THỐNG NHẤT
+0,http://inminhquan.com/,0.46203378,0.42323315,0.16688604665217627,CÔNG TY TNHH IN ẤN LÊ MINH QUÂN
+0,https://annhienfood.com.vn/,0.6178403,0.5690187,0.18566911655394722,CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ DINH DƯỠNG PHÁT AN NHIÊN
+0,https://cokhitudongchiho.com/lien-he,0.6668898,0.48932028,0.11933563756341835,CÔNG TY TNHH CƠ KHÍ HƯỚNG PHONG
+0,https://denledchatluongcao.vn/,0.58549887,0.5091422,0.040733677606117305,CÔNG TY CỔ PHẦN GIẢI PHÁP CHIẾU SÁNG VÀ NĂNG LƯỢNG SOHOBI
+0,https://automation-tienquan.com/,0.55429506,0.42990887,0.03827468558092993,CÔNG TY TNHH MT TIẾN QUÂN
+0,https://daihoabinhduong.com/,0.68686444,0.340711,0.09996847019733053,CÔNG TY TNHH ĐẠI HOÀ JA
+0,https://daihoaco.com/,0.6720403,0.38271213,0.09098761225884221,CÔNG TY TNHH ĐẠI HOÀ JA
+0,https://globalfoodsource.vn/,0.45226628,0.3492312,0.14527047790347228,CÔNG TY TNHH NỮ HOÀNG MÙA XUÂN
+0,https://huunghiplastic.com.vn/,0.5202887,0.34846812,0.11122605228746037,CÔNG TY TNHH HẠT NHỰA HỮU NGHỊ
+0,https://ematechvn.com/,0.50488055,0.48865297,0.19554535111025462,CÔNG TY TNHH EMA TECH
+0,https://baocaothongtin.com/vi/congty/vn-VN0001430704/hung-uy-vuong-production-trading-service-company-limited/,0.078855574,0.19822204,0.0,CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ HÙNG UY VƯƠNG
+0,https://infodoanhnghiep.com/thong-tin/Cty-TNHH-MTV-Thuong-Mai-Dich-Vu-Hoa-Bi-49927.html,0.43453747,0.28359714,0.09597465942942571,CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ HỌA BÌ
+0,https://www.yenviet.com.vn/,0.7457094,0.466607,0.06333249894743383,CÔNG TY TNHH ĐẠI YẾN VIỆT
+0,http://euroland.dichvuvietbaichuanseo.com/,0.39234203,0.4472028,0.15544609959512135,CÔNG TY TNHH ĐẦU TƯ VÀ PHÁT TRIỂN EURO LAND VIỆT NAM
