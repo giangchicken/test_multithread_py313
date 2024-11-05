@@ -52,4 +52,7 @@ pip install -r requirements.txt
 ```
 
 PYTHON_GIL=0 python3 report.py
+
+**Note:** These results are based on tests conducted for 360 URLs.
+
 ![](Screenshot%202024-11-06%20051317.png)
