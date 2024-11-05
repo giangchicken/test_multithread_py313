@@ -50,8 +50,9 @@ To test the setup on your system (with specifications of `2 CPU cores and 8 GB o
 conda activate NAME_ENV
 pip install -r requirements.txt
 ```
-
+```
 PYTHON_GIL=0 python3 report.py
+```
 
 **Note:** These results are based on tests conducted for 360 URLs.
 

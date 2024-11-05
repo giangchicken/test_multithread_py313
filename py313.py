@@ -60,14 +60,14 @@ def time_taken(func):
 
 # Sequential Crawling
 @time_taken
-def sequential_crawl():
+def sequential_crawl(meta_df):
     for i in range(len(meta_df)):
         row = meta_df.iloc[i]
         task(row)
 
 # Multi-threaded Crawling
 @time_taken
-def multi_threaded_crawl():
+def multi_threaded_crawl(meta_df):
     threads = []
     for i in range(len(meta_df)):
         row = meta_df.iloc[i]
@@ -81,7 +81,7 @@ def multi_threaded_crawl():
 
 # Multi-processing Crawling
 @time_taken
-def multi_processing_crawl():
+def multi_processing_crawl(meta_df):
     processes = []
     for i in range(len(meta_df)):
         row = meta_df.iloc[i]
@@ -96,10 +96,10 @@ def multi_processing_crawl():
 # Run each crawl type and compare times
 if __name__ == "__main__":
     print("Starting sequential crawl:")
-    sequential_crawl()
+    sequential_crawl(meta_df)
 
     print("Starting multi-threaded crawl:")
-    multi_threaded_crawl()
+    multi_threaded_crawl(meta_df)
 
     print("Starting multi-processing crawl:")
-    multi_processing_crawl()
+    multi_processing_crawl(meta_df)
