@@ -6,7 +6,7 @@ This guide provides instructions for setting up a Conda environment with Python 
 ### Prerequisites
 - Ubuntu or any Debian-based Linux distribution
 - Conda installed (Anaconda or Miniconda)
-
+- Avoid using Docker without a GUI, as some URLs require headless browsing.
 ---
 
 ### Step 1: Create Conda Environment with Python 3.13
