@@ -8,41 +8,61 @@ import os
 import random
 import tldextract
 from tqdm import tqdm
-
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+import time
 
 class WebScraper:
     def __init__(self, saving_path, get_subdomain=True):
         self.saving_path = saving_path
         self.get_subdomain = get_subdomain
         self.chrome_options = Options()
-
-        # self.chrome_options.add_argument('--headless')
-        # self.chrome_options.add_argument("--no-sandbox")
-        # self.chrome_options.add_argument("--disable-dev-shm-usage")
+        self.chrome_options.add_argument("--no-sandbox")
+        self.chrome_options.add_argument("--disable-dev-shm-usage")
 
     def _get_text(self, url, id, index):
         try:
-            driver = webdriver.Chrome(self.chrome_options)  
+            # Start with headless mode
+            self.chrome_options.add_argument("--headless")
+            driver = webdriver.Chrome(options=self.chrome_options)
             driver.get(url)
-
-            full_html = driver.execute_script("return document.documentElement.outerHTML;")
-            soup = BeautifulSoup(full_html, 'html.parser')
-
-            # Loại bỏ tất cả các thẻ HTML, chỉ giữ lại nội dung văn bản
-            text_only = soup.get_text()
-            text_only = ' '.join(text_only.split(' '))
-            cleaned_text = '\n'.join(filter(None, text_only.split('\n')))
-
-            # Save the text to a file
-            output_file = f"{self.saving_path}/{id}/{index}.txt"
-            os.makedirs(os.path.dirname(output_file), exist_ok=True)
-            with open(output_file, 'w', encoding='utf-8') as file:
-                file.write(cleaned_text)
-
-            print(f"url: {url} \n Saved: {output_file}")
-
-        except requests.exceptions.RequestException as e:
-            driver.quit()
+            
+            # Wait and check if the content loads as expected
+            try:
+                # Customize this selector based on the element that confirms the page loaded fully
+                # WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+                full_html = driver.execute_script("return document.documentElement.outerHTML;")
+                soup = BeautifulSoup(full_html, 'html.parser')
+                # print(soup.get_text(strip=True))
+                # If content is missing, retry without headless mode
+                if ("This site can’t be reached" in soup.get_text(strip=True)) or (not soup.get_text(strip=True)):  
+                    # print("Content missing in headless mode, retrying with non-headless mode...")
+                    driver.quit()
+                    # time.sleep(1)
+                    # Retry without headless mode
+                    self.chrome_options = Options()
+                    self.chrome_options.add_argument("--no-sandbox")
+                    self.chrome_options.add_argument("--disable-dev-shm-usage")
+                    # self.chrome_options.headless = False
+                    driver = webdriver.Chrome(options=self.chrome_options)
+                    driver.get(url)
+                    full_html = driver.execute_script("return document.documentElement.outerHTML;")
+                    soup = BeautifulSoup(full_html, 'html.parser')
+                
+                # Extract and save content
+                text_only = soup.get_text()
+                cleaned_text = '\n'.join(filter(None, text_only.split('\n')))
+                output_file = f"{self.saving_path}/{id}/{index}.txt"
+                os.makedirs(os.path.dirname(output_file), exist_ok=True)
+                with open(output_file, 'w', encoding='utf-8') as file:
+                    file.write(cleaned_text)
+                
+                print(f"url: {url} \n Saved: {output_file}")
+            finally:
+                driver.quit()
+        
+        except Exception as e:
             print(f"Error fetching the page: {e}")
 
     def _find_subdomains(self, url):
@@ -109,7 +129,7 @@ class WebScraper:
 
             if len(process_sub_link) > 0:
                 for path_url in process_sub_link:
-                    if count <= 6:
+                    if count <= 5:
                         try:
                             self._get_text(path_url, id, count)
                             count += 1
@@ -121,6 +141,6 @@ class WebScraper:
             print("=" * 50)
 
     def process_url(self, url, id, count):
-        print("url: ", url)
+        # print("url: ", url)
         # Get text from the main domain
         self._get_text(url, id, count)
