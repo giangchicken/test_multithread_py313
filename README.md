@@ -41,6 +41,7 @@ google-chrome --version
 sudo mv chromedriver /usr/local/bin/
 sudo chmod +x /usr/local/bin/chromedriver
 ```
+---
 
 ## Example: Running the Multi-Threaded Web Scraping Script
 
